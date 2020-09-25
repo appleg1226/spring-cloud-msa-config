@@ -3,7 +3,7 @@ spring:
     host: localhost
     port: 5672
     username: eunchong
-    password: dmschd92
+    password: ****
   cloud:
     stream:
       bindings:
