@@ -1,0 +1,20 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: eunchong
+    password: dmschd92
+  cloud:
+    stream:
+      bindings:
+        buyItemChannel:
+          destination: buyItems
+      default:
+        contentType: application/json
+  zipkin:
+    baseUrl: http://localhost:9411/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

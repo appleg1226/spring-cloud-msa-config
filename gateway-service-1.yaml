@@ -1,0 +1,18 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  retryable: true
+  routes:
+    shop:
+      path: /shop/**
+      serviceId: shop-service
+    user:
+      path: /user/**
+      serviceId: user-service
+
+spring:
+  zipkin:
+    baseUrl: http://localhost:9411/
