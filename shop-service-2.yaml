@@ -13,8 +13,3 @@ spring:
         contentType: application/json
   zipkin:
     baseUrl: http://localhost:9411/
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
